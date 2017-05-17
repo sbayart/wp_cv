@@ -1,0 +1,42 @@
+/*!
+Theme Name: CV2
+Theme URI: http://underscores.me/
+Author: solene
+Author URI: http://solene
+Description: wordpress_cv
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+
+Tags:
+*/
+body {
+  background-color: Cornsilk;
+  background-image: url(home/solene/Code/wordpress_cv/wordpress/wp-content/uploads/2017/04/arabesque.jpg);
+  width: 70%;
+  display: flex;
+  margin: auto; }
+  body header {
+    text-align: center;
+    font-family: 'Gochi Hand', cursive; }
+    body header a {
+      text-decoration: none;
+      color: inherit;
+      font-size: 5em; }
+    body header div p {
+      font-size: 2em; }
+  body #content h2 {
+    font-family: 'Gochi Hand', cursive;
+    font-size: 2em;
+    text-align: center; }
+  body #content ul li {
+    list-style: none; }
+  body #content .domaine {
+    border: 2px solid black;
+    border-radius: 2em;
+    padding: 2em;
+    margin: 2em; }
+    body #content .domaine p {
+      text-align: justify; }
+
+/*# sourceMappingURL=style.css.map */
