@@ -11,42 +11,113 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags:
 */
 body {
-    background-color: Cornsilk;
-    background-image: url(home/solene/Code/wordpress_cv/wordpress/wp-content/uploads/2017/04/arabesque.jpg);
-    width: 70%;
-    display: flex;
+    background: Cornsilk url(arabesque-648171_1920.jpg) no-repeat fixed bottom;
+    width: 95%;
     margin: auto;
+    font-family: 'Montserrat', sans-serif;
     header {
-        // background-color:red;
         text-align: center;
         font-family: 'Gochi Hand', cursive;
         a {
             text-decoration: none;
             color: inherit;
-            font-size:5em;
+            font-size:3em;
         }
         div {
             p {
-                font-size: 2em;
+                font-size: 1.5em;
+                margin: 0.5em;
+            }
+        }
+        .menu {
+            background-color: black;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            a {
+                font-size: 1.1em;
+                color: Cornsilk;
+            }
+            a:hover {
+                background-color: Cornsilk;
+                color: black;
             }
         }
     }
     #content {
-        h2 {
-            font-family: 'Gochi Hand', cursive;
-            font-size: 2em;
-            text-align: center;
-        }
         ul li {
             list-style: none;
         }
         .domaine {
-            border: 2px solid black;
-            border-radius: 2em;
-            padding: 2em;
-            margin: 2em;
+            background-color: Ivory;
+            border: 2px solid LightSlateGray;
+            // border-radius: 2em;
+            padding: 0.8em;
+            margin: 0.5em 0;
+            h2 {
+                font-family: 'Gochi Hand', cursive;
+                font-size: 3em;
+                text-align: center;
+                margin: 0.3em;
+            }
+            .title {
+                text-decoration: none;
+                color: inherit;
+                font-family: 'Gochi Hand', cursive;
+                font-size: 1.5em;
+            }
+            .period {
+                text-align: right;
+            }
             p {
                 text-align: justify;
+            }
+        }
+    }
+}
+@media screen and (min-width: 600px) {
+    body {
+        width: 85%;
+        header {
+            a {
+                font-size:5em;
+            }
+            .menu {
+                flex-direction: row;
+                flex-wrap: wrap;
+                a {
+                    font-size: 1.3em;
+                }
+            }
+        }
+        #content {
+            .domaine {
+                padding: 2em;
+                margin: 2em;
+            }
+        }
+    }
+}
+@media screen and (min-width: 1250px) {
+    body {
+        width: 80%;
+        header {
+            a {
+                font-size:5em;
+            }
+            .menu {
+                a {
+                    font-size: 1.7em;
+                }
+            }
+        }
+        #content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            .domaine {
+                width: 39%;
+                margin: 1em;
             }
         }
     }

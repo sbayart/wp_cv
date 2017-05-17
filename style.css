@@ -11,32 +11,79 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags:
 */
 body {
-  background-color: Cornsilk;
-  background-image: url(home/solene/Code/wordpress_cv/wordpress/wp-content/uploads/2017/04/arabesque.jpg);
-  width: 70%;
-  display: flex;
-  margin: auto; }
+  background: Cornsilk url(arabesque-648171_1920.jpg) no-repeat fixed bottom;
+  width: 95%;
+  margin: auto;
+  font-family: 'Montserrat', sans-serif; }
   body header {
     text-align: center;
     font-family: 'Gochi Hand', cursive; }
     body header a {
       text-decoration: none;
       color: inherit;
-      font-size: 5em; }
+      font-size: 3em; }
     body header div p {
-      font-size: 2em; }
-  body #content h2 {
-    font-family: 'Gochi Hand', cursive;
-    font-size: 2em;
-    text-align: center; }
+      font-size: 1.5em;
+      margin: 0.5em; }
+    body header .menu {
+      background-color: black;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around; }
+      body header .menu a {
+        font-size: 1.1em;
+        color: Cornsilk; }
+      body header .menu a:hover {
+        background-color: Cornsilk;
+        color: black; }
   body #content ul li {
     list-style: none; }
   body #content .domaine {
-    border: 2px solid black;
-    border-radius: 2em;
-    padding: 2em;
-    margin: 2em; }
+    background-color: Ivory;
+    border: 2px solid LightSlateGray;
+    padding: 0.8em;
+    margin: 0.5em 0; }
+    body #content .domaine h2 {
+      font-family: 'Gochi Hand', cursive;
+      font-size: 3em;
+      text-align: center;
+      margin: 0.3em; }
+    body #content .domaine .title {
+      text-decoration: none;
+      color: inherit;
+      font-family: 'Gochi Hand', cursive;
+      font-size: 1.5em; }
+    body #content .domaine .period {
+      text-align: right; }
     body #content .domaine p {
       text-align: justify; }
+
+@media screen and (min-width: 600px) {
+  body {
+    width: 85%; }
+    body header a {
+      font-size: 5em; }
+    body header .menu {
+      flex-direction: row;
+      flex-wrap: wrap; }
+      body header .menu a {
+        font-size: 1.3em; }
+    body #content .domaine {
+      padding: 2em;
+      margin: 2em; } }
+@media screen and (min-width: 1250px) {
+  body {
+    width: 80%; }
+    body header a {
+      font-size: 5em; }
+    body header .menu a {
+      font-size: 1.7em; }
+    body #content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around; }
+      body #content .domaine {
+        width: 39%;
+        margin: 1em; } }
 
 /*# sourceMappingURL=style.css.map */
